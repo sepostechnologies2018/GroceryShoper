@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Grocery Shopper</string>
+    <string name="user_registration"> USER REGISTRATION </string>
+    <string name="personal_info">Personal Information</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">Home</string>
+    <string name="submit">Submit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello">Email : contact@appwebtechnologies.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_email">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_up">Login</string>
+    <string name="code">Enter  Postcode</string>
+    <string name="continue_order">Continue</string>
+    <string name="delivery_info">Please fill the information to delivery your food</string>
+    <string name="cash_on_delivery">Pay Later</string>
+    <string name="pay_online">Pay Online</string>
+    <string name="online">Online</string>
+    <string name="collect">Collection</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="full_name">Full name</string>
+    <string name="email_id">Email Id</string>
+    <string name="contact_no">Contact no</string>
+    <string name="hint_name">Full Name</string>
+    <string name="delivery">Delivery</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="delivery_details">Delivery Details</string>
+
+    <string name="delivery_detail">Payment Type</string>
+    <string name="Conform_password">Confirm Password</string>
+    <string name="title_activity_load_data">LoadData</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="search_hint">Search Product or Category</string>
+
+
+    <string name="welcome_to_payment">Online Payment</string>
+    <string name="amount">Amount</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="net_payable">Net Payable</string>
+    <string name="type">Order Type</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+</resources>

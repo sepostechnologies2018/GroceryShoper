@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_wishlist"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="My Wishlist"
+                android:textSize="20dp"
+                android:background="@drawable/custom_button_normal"
+                android:textColor="@color/button"
+                android:padding="10dp"
+                 android:layout_margin="20dp"
+                android:gravity="center"
+                android:layout_height="50dp"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="You have no product in your Wishlist"
+                android:layout_width="match_parent"
+                android:layout_marginTop="90dp"
+                android:gravity="center|bottom"
+                android:layout_height="wrap_content"
+                android:id="@+id/textmy" />
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+                <Button
+                    android:id="@+id/shopping"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:longClickable="true"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:textSize="13dp"
+                    android:background="@drawable/custom_button_selected"
+                    android:textColor="@color/white"
+                    android:text="CONTINUE SHOPPING"
+                    android:drawableTop="@color/black"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linerlayout"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/custom_button_normal"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text=""
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/reddark"
+                android:text=""
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/poupOk12"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="OK"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/reddark"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

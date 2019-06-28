@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:padding="0dp" >
+
+
+    <LinearLayout
+        android:id="@+id/holelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:padding="0dp" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+
+      >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="5"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+
+            >
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:layout_height="100dp"
+                android:clickable="true">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/grid_image_cart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/album_cover_height"
+                    android:layout_gravity="center"
+
+                    >
+                </com.android.volley.toolbox.NetworkImageView>
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/offerimgcart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="2dip"
+                    android:src="@drawable/offerstranf"
+
+                    >
+                </com.android.volley.toolbox.NetworkImageView>
+              <!--  <ImageView
+                    android:id="@+id/offerimgcart"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="2dip"
+                    android:src="@drawable/offerstranf" />-->
+
+            </RelativeLayout>
+          <!--  <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/grid_image_cart"
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                >
+            </com.android.volley.toolbox.NetworkImageView>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/grid_text_cart" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="right|center"
+                android:id="@+id/price" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Offer"
+                android:maxLines="2"
+                android:paddingRight="3dp"
+                android:layout_marginTop="-2dp"
+                android:textSize="13dp"
+                android:gravity="right|top"
+                android:id="@+id/offertextamount" />
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Offer"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="14dp"
+                android:ellipsize="end"
+                android:textColor="@color/button"
+                android:gravity="center"
+                android:id="@+id/fullamount" />-->
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="5"
+        >
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/offertext"
+                android:text=""
+                android:layout_width="match_parent"
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/removelay"
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/remove"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/remove" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/quntyty"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/quanty"
+                    android:text="1"
+                    android:layout_width="match_parent"
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add_item"
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/addicon" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Move To WishList"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:visibility="visible"
+            android:drawableRight="@drawable/heartwhite"
+            android:background="@color/textviewbackground"
+            android:layout_margin="5dp"
+            android:paddingRight="15dp"
+            android:layout_weight="1"
+            android:id="@+id/wishlist" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="Remove"
+            android:background="@color/textviewbackground"
+            android:drawableRight="@drawable/ic_remove12"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/delete" />
+
+
+
+    </LinearLayout>
+
+
+
+
+        </LinearLayout>
+</LinearLayout>

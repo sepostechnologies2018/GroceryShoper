@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/morefragment"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="2">
+  <include layout="@layout/subhadder" />
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_weight="4"
+     android:layout_marginTop="20dp"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="0dp"
+      android:layout_weight=".7"
+      android:layout_height="50dp"
+      android:gravity="center|left"
+      android:text="Hello there!"
+      android:padding="10dp"
+      android:textSize="15dp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/timestamp"
+      android:layout_width="0dp"
+      android:layout_weight=".5"
+      android:layout_height="50dp"
+      android:text="Log IN"
+      android:background="@color/cardview_light_background"
+      android:padding="10dp"
+      android:gravity="center"
+      android:textColor="@color/colorPrimary"
+      android:textSize="18dp" />
+  <TextView
+      android:id="@+id/timestamp1"
+      android:layout_width="0dp"
+      android:layout_weight=".5"
+      android:text="Sign Up"
+      android:background="@color/cardview_light_background"
+      android:padding="5dp"
+      android:gravity="center"
+      android:layout_height="50dp"
+      android:textColor="@color/colorPrimary"
+      android:textSize="18dp" />
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_weight="1"
+     android:orientation="horizontal"
+    android:layout_margin="10dp"
+     android:layout_width="match_parent"
+
+     android:layout_height="wrap_content">
+
+
+  <TextView
+      android:layout_width="0dp"
+      android:id="@+id/call"
+      android:text="Call"
+      android:layout_weight="1"
+      android:textSize="15dp"
+
+      android:padding="5dp"
+      android:background="@drawable/custom_button_normal"
+      android:textColor="@color/button"
+      android:paddingLeft="30dp"
+      android:gravity="center"
+      android:layout_height="50dp"
+      />
+
+  <TextView
+      android:layout_width="0dp"
+      android:text="Send Feedback!"
+      android:layout_weight="1"
+      android:textSize="15dp"
+      android:id="@+id/feedback"
+      android:padding="5dp"
+      android:background="@drawable/custom_button_normal"
+      android:textColor="@color/button"
+      android:paddingLeft="30dp"
+      android:gravity="center"
+      android:layout_height="50dp"
+      />
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_weight="1"
+   android:layout_margin="10dp"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:text="Share App"
+      android:layout_weight=".5"
+      android:textSize="15dp"
+      android:id="@+id/shareapp"
+      android:padding="10dp"
+      android:background="@drawable/custom_button_normal"
+      android:textColor="@color/button"
+      android:paddingLeft="30dp"
+      android:gravity="center"
+      android:layout_height="40dp"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:text="Rate US!"
+      android:layout_weight=".5"
+      android:textSize="15dp"
+
+      android:padding="10dp"
+      android:background="@drawable/custom_button_normal"
+      android:textColor="@color/button"
+      android:paddingLeft="30dp"
+      android:gravity="center"
+      android:layout_height="40dp"
+      android:id="@+id/rateus" />
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:visibility="gone"
+     android:layout_weight="2"
+     >
+  <include layout="@layout/newfootersub" />
+ </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="5"
+        android:background="@color/mainbackground"
+        android:id="@+id/cotegory"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/mainimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/defaultimg"
+                android:layout_margin="5dp"
+                >
+            </com.android.volley.toolbox.NetworkImageView>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/mainbackground"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/mainbackground"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:srcCompat="@drawable/next"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/mainbackground"
+                android:id="@+id/imageView3" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

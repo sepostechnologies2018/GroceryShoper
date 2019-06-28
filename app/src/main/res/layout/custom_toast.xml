@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toast_layout_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        app:srcCompat="@drawable/carticon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Added to cart"
+        android:gravity="center"
+        android:textColor="#FFF" />
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:elevation="5dp"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/album_cover_height">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/album_cover_height"
+                    android:layout_gravity="center"
+
+                    >
+                </com.android.volley.toolbox.NetworkImageView>
+
+               <!-- <ProgressBar
+                    android:id="@+id/progressNewsList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                </ProgressBar>-->
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/offerimg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="2dip"
+                   android:background="@drawable/offerstranf"
+
+                    >
+                </com.android.volley.toolbox.NetworkImageView>
+               <!-- <ImageView
+                    android:id="@+id/offerimg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="2dip"
+                    android:src="@drawable/offerstranf" />-->
+
+            </RelativeLayout>
+
+        <!--    -->
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/subdis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/album_title" />
+          <!--  -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/pri_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Price "
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textviewbackground"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Price "
+                android:gravity="right"
+                 android:layout_marginRight="15dp"
+                android:textColor="@color/textviewbackground"
+                android:textSize="14dp" />
+</LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/heartblack"
+                    android:id="@+id/wish" />
+
+                <ImageView
+                    android:id="@+id/remove"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.99"
+                    card_view:srcCompat="@drawable/remove" />
+
+                <TextView
+                    android:id="@+id/quanitytext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/addtocart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    card_view:srcCompat="@drawable/addicon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c9d7cdc5"
+    android:orientation="vertical"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lierarlayout"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="10"
+      >
+
+
+                <TextView
+                    android:id="@+id/itemname"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:textColor="#b9171817"
+                    android:text="sgfvdg"
+                    android:elevation="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:textStyle="normal" />
+
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="30dp"
+                card_view:srcCompat="@drawable/add"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="15dp"
+                android:id="@+id/itemimagrs" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

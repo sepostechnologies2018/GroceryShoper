@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hadder"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/menu"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/menu"
+            android:id="@+id/navigation"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:id="@+id/homeiconlayout"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/icon"
+
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_weight="0.75"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+        android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:id="@+id/wishlist"
+        android:visibility="visible"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/wishlisticon"
+            android:layout_marginLeft="10dp"
+
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/wishlest"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/heart"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wishquanitymain"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignRight="@+id/wishlest"
+                android:textColor="@color/hadder"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-3dp"
+                android:padding="0dp"
+                android:textSize="14dp"
+                android:gravity="center_horizontal"
+                android:layout_alignTop="@+id/wishlest"
+                android:background="@drawable/texview_design"
+                android:textStyle="normal"
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contact_us"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.25"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+   </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

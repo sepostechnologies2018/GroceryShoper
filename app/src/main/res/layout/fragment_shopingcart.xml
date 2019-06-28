@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/shoping"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <include layout="@layout/subhadder" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|bottom"
+            android:textColor="@color/button"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:src="@drawable/carticon"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:text="6 Items -"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal" />
+
+
+
+            <TextView
+                android:id="@+id/quanity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:text="RS-860"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:id="@+id/inflate"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/check_out_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CHECKOUT"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@color/button"
+            android:id="@+id/textView6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        >
+        <include layout="@layout/newfootersub" />
+    </LinearLayout>
+</LinearLayout>

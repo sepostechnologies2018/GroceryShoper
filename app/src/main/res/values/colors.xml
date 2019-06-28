@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0835ba</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="button">#716d6d</color>
+    <color name="red">#89b512</color>
+    <color name="textviewbackground">#615f5d</color>
+    <color name="background">#eeeeee</color>
+    <color name="quanity">#c96464</color>
+    <color name="login">#64c9ba</color>
+    <color name="checkout">#fcd000</color>
+    <color name="hadder">#89b512</color>
+    <color name="footer">#114473</color>
+    <color name="icon">#fcfcfc</color>
+    <color name="mainbackground">#89b512</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="wish">#dfdfdf</color>
+    <color name="green">#6c9400</color>
+    <color name="reddark">#ff0008</color>
+    <color name="blue">#114473</color>
+</resources>
